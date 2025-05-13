@@ -1,0 +1,160 @@
+:root {
+  --bg: #121212;
+  --text: #f1f1f1;
+  --nav-bg: #121212;
+  --link: #888;
+  --link-hover: #fff;
+}
+
+[data-theme="light"] {
+  --bg: #ffffff;
+  --text: #111111;
+  --nav-bg: #ffffff;
+  --link: #555;
+  --link-hover: #000;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  overflow-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+.wrapper {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.navbar {
+  background: var(--nav-bg);
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-links a {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--link);
+}
+
+.nav-links a:hover {
+  color: var(--link-hover);
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.theme-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: var(--link);
+  transition: fill 0.3s;
+}
+
+.theme-toggle:hover .theme-icon {
+  fill: var(--link-hover);
+}
+
+.content {
+  padding: 6rem 0 2rem;
+  flex: 1 0 auto;
+}
+
+/* Footer */
+.site-footer {
+  padding: 2rem 0;
+  font-size: 0.875rem;
+  text-align: left;
+  color: var(--link);
+  margin-top: auto;
+}
+
+.footer-text {
+  margin: 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.footer-left {
+  color: var(--text);
+  font-weight: bold;
+}
+
+.footer-right {
+  color: var(--link);
+  font-family: monospace;
+}
+
+.contact-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.contact-links a {
+  color: var(--link);
+  transition: color 0.2s;
+}
+
+.contact-links a:hover {
+  color: var(--link-hover);
+}
+
+.contact-links svg {
+  width: 22px;
+  height: 22px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
