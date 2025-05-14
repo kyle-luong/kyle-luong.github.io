@@ -42,6 +42,6 @@ i'm kyle o_o
 
 ## built with
 
-jekyll · markdown · html · css · js · lucide icons
+jekyll · markdown · html · css · js · lucide icons · inter font
 
 see [site inspiration](https://michaelandreuzza.com)

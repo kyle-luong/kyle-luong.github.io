@@ -18,7 +18,7 @@ body {
   background: var(--bg);
   color: var(--text);
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   line-height: 1.6;
   overflow-wrap: break-word;
   display: flex;
