@@ -6,11 +6,15 @@ permalink: /about/
 
 ## about me
 
-i'm kyle o_o
+I'm an undergraduate student at the University of Virginia studying Computer Science and Mathematics. I have a broad interest in software development and machine learning, especially when it involves solving real problems and building things people find useful.
+
+Outside of that, I like basketball, good food, music (of all genres), lifting at the gym, and catching up on sleep.
+
+I'm always open to opportunities where I can learn and work on meaningful projects. Feel free to reach out!
 
 ---
 
-## contact
+## contact me
 
 <div class="contact-links">
   <a href="mailto:kylewfl@gmail.com" aria-label="Email">
