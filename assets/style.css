@@ -7,9 +7,9 @@
 }
 
 [data-theme="light"] {
-  --bg: #ffffff;
+  --bg: #f5f5f5;
   --text: #111111;
-  --nav-bg: #ffffff;
+  --nav-bg: #f5f5f5;
   --link: #555;
   --link-hover: #000;
 }
