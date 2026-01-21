@@ -4,6 +4,7 @@
   --nav-bg: #121212;
   --link: #888;
   --link-hover: #fff;
+  --border: #333;
 }
 
 [data-theme="light"] {
@@ -12,6 +13,7 @@
   --nav-bg: #f5f5f5;
   --link: #555;
   --link-hover: #000;
+  --border: #ccc;
 }
 
 body {
@@ -168,7 +170,7 @@ a:hover {
 }
 
 .project-card {
-  border: 1px solid #333;
+  border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--nav-bg);
   padding: 1rem;
@@ -210,4 +212,36 @@ a:hover {
 
 .project-links a:hover {
   color: var(--link-hover);
+}
+
+/* date styling */
+.date {
+  font-family: monospace;
+  color: var(--link);
+}
+
+/* other projects list */
+.other-projects {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.other-projects li {
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.other-projects a {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.other-projects a:hover {
+  color: var(--link-hover);
+}
+
+.other-projects .project-stack {
+  display: block;
+  margin-top: 0.25rem;
 }
