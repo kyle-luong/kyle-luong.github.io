@@ -13,6 +13,16 @@
   page: false
   highlighted: true
 
+- title: 1v1stats
+  slug: 1v1stats
+  image: 1v1stats.png
+  stack: Next.js · TypeScript · tRPC · Prisma · Supabase (PostgreSQL) · Vercel · GitHub Actions · React · Tailwind CSS
+  description: A full-stack application for tracking and analyzing statistics from 1v1 basketball YouTube videos
+  github: https://github.com/kyle-luong/1v1stats
+  website: https://1v1stats.com
+  page: false
+  highlighted: true
+
 - title: f1tenth-autonomous-racing
   slug: f1tenth-autonomous-racing
   image: 
