@@ -267,3 +267,19 @@ a:hover {
 .other-projects .project-links-inline a:hover {
   color: var(--link-hover);
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .project-header {
+    flex-wrap: wrap;
+    /* Allow wrapping only if needed */
+    gap: 0.5rem;
+  }
+
+  /* Slightly adjust size for very small screens */
+  .other-projects .project-stack,
+  .other-projects .project-links-inline a,
+  .project-stack {
+    font-size: 0.75rem;
+  }
+}
