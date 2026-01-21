@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>{{ page.title }} | {{ site.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="{{ page.description | default: site.description }}" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:title" content="{{ page.title }} | {{ site.title }}" />
+  <meta property="og:description" content="{{ page.description | default: site.description }}" />
 
   <!-- use default color scheme -->
   <script>
@@ -12,7 +20,7 @@
       document.documentElement.setAttribute('data-theme', prefersLight ? 'light' : 'dark');
     }
   </script>
-  
+
 
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}" />
   <link rel="icon" href="{{ '/assets/favicon.ico' | relative_url }}">
@@ -30,7 +38,7 @@
         <a href="/about/">about</a>
         <button id="toggle-theme" class="theme-toggle" aria-label="Toggle theme">
           <svg class="theme-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M12 3a9 9 0 0 0 0 18 9 9 0 0 0 0-18zM2 12a10 10 0 1 1 20 0 10 10 0 0 1-20 0z"/>
+            <path d="M12 3a9 9 0 0 0 0 18 9 9 0 0 0 0-18zM2 12a10 10 0 1 1 20 0 10 10 0 0 1-20 0z" />
           </svg>
         </button>
       </nav>
@@ -62,30 +70,31 @@
 
   <!-- footer -->
   <footer class="site-footer">
-  <div class="wrapper footer-container">
-    <div class="footer-left">kyle luong</div>
-    <div class="footer-right" id="time">Loading time...</div>
-  </div>
+    <div class="wrapper footer-container">
+      <div class="footer-left">kyle luong</div>
+      <div class="footer-right" id="time">Loading time...</div>
+    </div>
   </footer>
 
   <!-- time script -->
   <script>
-  function updateETClock() {
-    const options = {
-      timeZone: 'America/New_York',
-      hour: '2-digit',
-      minute: '2-digit',
-      second: '2-digit',
-      hour12: false
-    };
+    function updateETClock() {
+      const options = {
+        timeZone: 'America/New_York',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+      };
 
-    const time = new Date().toLocaleTimeString('en-US', options);
-    document.getElementById('time').textContent = time;
-  }
+      const time = new Date().toLocaleTimeString('en-US', options);
+      document.getElementById('time').textContent = time;
+    }
 
-  updateETClock();
-  setInterval(updateETClock, 1000);
+    updateETClock();
+    setInterval(updateETClock, 1000);
   </script>
 
 </body>
+
 </html>
