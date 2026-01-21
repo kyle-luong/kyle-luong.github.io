@@ -1,0 +1,44 @@
+# Projects Data File
+# To add a project: copy a block and fill in the fields
+# Set highlighted: true to show with image on main projects page
+# Set highlighted: false to show in "Other Projects" list
+
+- title: UVA x NBA Draft Analysis
+  slug: nba-draft-analysis
+  image: nba_draft.png
+  stack: Python · scikit-learn · pandas
+  description: Machine learning to predict UVA players' NBA draft potential based on college stats
+  github:
+  highlighted: true
+
+- title: WahooWheels
+  slug: wahoowheels
+  image: wahoowheels.png
+  stack: React.js · Django · Mapbox · Bootstrap
+  description: Ride-sharing platform for UVA students to offer and request rides
+  github: https://github.com/PiShrestha/wahoowheels
+  highlighted: true
+
+- title: Tech Catalog
+  slug: tech-catalog
+  image: techcatalog.png
+  stack: Django · Bootstrap · Heroku · PostgreSQL · AWS S3 · GitHub Actions
+  description: Amazon-style catalog and marketplace clone for electronics and appliances
+  github: https://github.com/kyle-luong/techCLA
+  highlighted: false
+
+- title: Programmable
+  slug: programmable
+  image: programmable.png
+  stack: Flask · React.js · Firestore · Firebase
+  description: Spaced-repetition flashcard tool for reinforcing programming concepts
+  github: https://github.com/Jonuhthan/programmable
+  highlighted: false
+
+- title: CourseRate
+  slug: courserate
+  image: courserate.png
+  stack: JavaFX · JUnit · Mockito · Gradle
+  description: Desktop app for reviewing and rating college courses
+  github:
+  highlighted: false

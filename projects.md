@@ -16,61 +16,36 @@ I've completed a few projects that showcase foundational development skills, but
 
 ---
 
-### completed projects
+### highlighted projects
 
 <div class="project-grid">
-
+{% for project in site.data.projects %}
+{% if project.highlighted %}
   <div class="project-card">
-    <img src="/assets/images/nba_draft.png" alt="NBA Draft Analysis">
-    <h3>UVA x NBA Draft Analysis</h3>
-    <p class="project-stack">Python · scikit-learn · pandas</p>
-    <p>Machine learning to predict UVA players’ NBA draft potential based on college stats</p>
+    <img src="/assets/images/{{ project.image }}" alt="{{ project.title }}">
+    <h3>{{ project.title }}</h3>
+    <p class="project-stack">{{ project.stack }}</p>
+    <p>{{ project.description }}</p>
     <div class="project-links">
-      <a href="/projects/nba-draft-analysis">read more</a>
+      <a href="/projects/{{ project.slug }}">read more</a>
+      {% if project.github %} · <a href="{{ project.github }}">github</a>{% endif %}
     </div>
   </div>
-
-  <div class="project-card">
-    <img src="/assets/images/wahoowheels.png" alt="WahooWheels App">
-    <h3>WahooWheels</h3>
-    <p class="project-stack">React.js · Django · Mapbox · Bootstrap</p>
-    <p>Ride-sharing platform for UVA students to offer and request rides</p>
-    <div class="project-links">
-      <a href="/projects/wahoowheels">read more</a> · 
-      <a href="https://github.com/PiShrestha/wahoowheels">github</a>
-    </div>
-  </div>
-
-  <div class="project-card">
-    <img src="/assets/images/techcatalog.png" alt="Tech Catalog">
-    <h3>Tech Catalog</h3>
-    <p class="project-stack">Django · Bootstrap · Heroku · PostgreSQL · AWS S3 · GitHub Actions</p>
-    <p>Amazon-style catalog and marketplace clone for electronics and appliances</p>
-    <div class="project-links">
-      <a href="/projects/tech-catalog">read more</a> · 
-      <a href="https://github.com/kyle-luong/techCLA">github</a>
-    </div>
-  </div>
-
-  <div class="project-card">
-    <img src="/assets/images/programmable.png" alt="Programmable Flashcards">
-    <h3>Programmable</h3>
-    <p class="project-stack">Flask · React.js · Firestore · Firebase</p>
-    <p>Spaced-repetition flashcard tool for reinforcing programming concepts</p>
-    <div class="project-links">
-      <a href="/projects/programmable">read more</a> · 
-      <a href="https://github.com/Jonuhthan/programmable">github</a>
-    </div>
-  </div>
-
-  <div class="project-card">
-    <img src="/assets/images/courserate.png" alt="Course Review App">
-    <h3>CourseRate</h3>
-    <p class="project-stack">JavaFX · JUnit · Mockito · Gradle</p>
-    <p>Desktop app for reviewing and rating college courses</p>
-    <div class="project-links">
-      <a href="/projects/courserate">read more</a>
-    </div>
-  </div>
-
+{% endif %}
+{% endfor %}
 </div>
+
+---
+
+### other projects
+
+<ul class="other-projects">
+{% for project in site.data.projects %}
+{% unless project.highlighted %}
+  <li>
+    <a href="/projects/{{ project.slug }}">{{ project.title }}</a>
+    <span class="project-stack">{{ project.stack }}</span>
+  </li>
+{% endunless %}
+{% endfor %}
+</ul>
