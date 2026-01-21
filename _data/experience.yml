@@ -1,22 +1,51 @@
 # Experience Data File
 # To add a new entry: copy a block and fill in the fields
+# Optional fields: stack, org_url, page (set to true for read more link)
 
-- title: Incoming ML Research Intern
-  org: AgAID Institute
-  slug: agaid
-  dates: June 2025 – Aug 2025
+- title: Research Assistant
+  org: UVA Biocomplexity Institute
+  slug: biocomplexity
+  dates: Aug 2025 – Present
+  stack: Graphical Dynamical Systems · Multi-Agent Simulation
+  org_url: https://biocomplexity.virginia.edu
+  page: false
 
-- title: ML Research Assistant
+- title: Research Assistant
   org: UVA Link Lab × Floodwatch
   slug: floodwatch
   dates: Apr 2025 – Present
+  stack: Full-Stack Systems · TypeScript, Next.js, tRPC · ML Research (IEEE)
+  org_url: https://linklab.virginia.edu
+  page: false
 
-- title: ML Research Assistant
-  org: UVA Robot Autonomy Lab
-  slug: robot-autonomy
-  dates: Jan 2025 – May 2025
+- title: Teaching Assistant
+  org: UVA School of Engineering
+  slug: uva-engineering
+  dates: Aug 2025 – Present
+  stack: Computer Systems and Organization
+  org_url: https://engineering.virginia.edu
+  page: false
 
-- title: Executive Officer
+- title: Co-President
   org: ML@UVA
   slug: mlatuva
   dates: Oct 2024 – Present
+  stack: Technical Leadership · Operations, Partnerships, Education
+  org_url: https://mlatuva.org
+  page: false
+
+- title: Research Assistant
+  org: UVA Robot Autonomy Lab
+  slug: robot-autonomy
+  dates: Jan 2025 – May 2025
+  stack: Robot Safety & Control · Neural CBFs · 3D Scene Representations
+  org_url: 
+  page: false
+
+- title: Research Intern
+  org: AgAID Institute
+  slug: agaid
+  dates: June 2025 – Aug 2025
+  stack: Geospatial Multimodal ML · Remote Sensing Segmentation · WACV, IJCAI
+  org_url: https://agaid.org
+  page: false

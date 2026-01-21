@@ -9,13 +9,13 @@ permalink: /
 I'm an undergraduate student at the University of Virginia studying Computer Science and Mathematics.
 
 I'm currently working on:
-- A schedule routing app/extension
+- Surviving school (only school projects atm)
 - See more on my [projects](/projects)!
 
 I'm currently a/an:
-- Incoming ML Research Intern at AgAID (Summer 2025)
-- Undergraduate Researcher at UVA Link Lab x Floodwatch
-- Executive Officer at ML@UVA
+- Research Assistant at UVA Biocomplexity Institute
+- Research Assistant at UVA Link Lab x Floodwatch
+- Co-President at ML@UVA
 - See more on my [experience](/experience)!
 
 See more [about](/about) me and this site!

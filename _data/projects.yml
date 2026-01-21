@@ -1,15 +1,27 @@
 # Projects Data File
 # To add a project: copy a block and fill in the fields
+# Optional fields: github, website, page (set to true for read more link)
 # Set highlighted: true to show with image on main projects page
-# Set highlighted: false to show in "Other Projects" list
 
 - title: calview
   slug: calview
   image: calview.png
-  stack: React.js · Python · FastAPI · PostgreSQL · AWS S3 · GitHub Actions
+  stack: React.js · Python · FastAPI · PostgreSQL · AWS · GitHub Actions
   description: A calendar visualizer that parses .ics files, geocodes event locations, and displays a time-aware schedule with commutes
   github: https://github.com/kyle-luong/calview
+  website: https://calview.me
+  page: false
   highlighted: true
+
+- title: f1tenth-autonomous-racing
+  slug: f1tenth-autonomous-racing
+  image: 
+  stack: ROS · Python · SLAM · Pure Pursuit · Robotics
+  description: Perception and control algorithms for F1/10 autonomous racing
+  github: https://github.com/kyle-luong/f1tenth-autonomous-racing
+  website:
+  page: false
+  highlighted: false
 
 - title: UVA x NBA Draft Analysis
   slug: nba-draft-analysis
@@ -17,6 +29,8 @@
   stack: Python · scikit-learn · pandas
   description: Machine learning to predict UVA players' NBA draft potential based on college stats
   github:
+  website:
+  page: false
   highlighted: false
 
 - title: WahooWheels
@@ -25,6 +39,8 @@
   stack: React.js · Django · Mapbox · Bootstrap
   description: Ride-sharing platform for UVA students to offer and request rides
   github: https://github.com/PiShrestha/wahoowheels
+  website:
+  page: false
   highlighted: false
 
 - title: Tech Catalog
@@ -33,6 +49,8 @@
   stack: Django · Bootstrap · Heroku · PostgreSQL · AWS S3 · GitHub Actions
   description: Amazon-style catalog and marketplace clone for electronics and appliances
   github: https://github.com/kyle-luong/techCLA
+  website:
+  page: false
   highlighted: false
 
 - title: Programmable
@@ -41,6 +59,8 @@
   stack: Flask · React.js · Firestore · Firebase
   description: Spaced-repetition flashcard tool for reinforcing programming concepts
   github: https://github.com/Jonuhthan/programmable
+  website:
+  page: false
   highlighted: false
 
 - title: course-review-app
@@ -49,4 +69,6 @@
   stack: JavaFX · JUnit · Mockito · Gradle
   description: Desktop app for reviewing and rating college courses
   github: https://github.com/kyle-luong/course-review-app
+  website:
+  page: false
   highlighted: false

@@ -228,20 +228,42 @@ a:hover {
 }
 
 .other-projects li {
-  margin-bottom: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
   line-height: 1.4;
 }
 
-.other-projects a {
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  margin-bottom: 0.1rem;
+}
+
+.other-projects .project-name {
   color: var(--text);
   font-weight: 500;
 }
 
-.other-projects a:hover {
-  color: var(--link-hover);
+.other-projects .project-stack {
+  color: var(--link);
+  font-size: 0.8rem;
 }
 
-.other-projects .project-stack {
-  display: block;
-  margin-top: 0.25rem;
+.other-projects .project-links-inline {
+  display: flex;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.other-projects .project-links-inline a {
+  color: var(--link);
+  text-decoration: underline;
+  font-size: 0.85rem;
+}
+
+.other-projects .project-links-inline a:hover {
+  color: var(--link-hover);
 }

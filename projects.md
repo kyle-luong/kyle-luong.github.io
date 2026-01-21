@@ -10,13 +10,7 @@ I've completed a few projects that showcase foundational development skills, but
 
 ---
 
-### work in progress
-- A schedule routing app/extension
-- More secret ideas...
-
----
-
-### highlighted projects
+### highlighted project(s)
 
 <div class="project-grid">
 {% for project in site.data.projects %}
@@ -27,8 +21,9 @@ I've completed a few projects that showcase foundational development skills, but
     <p class="project-stack">{{ project.stack }}</p>
     <p>{{ project.description }}</p>
     <div class="project-links">
-      <a href="/projects/{{ project.slug }}">read more</a>
-      {% if project.github %} · <a href="{{ project.github }}">github</a>{% endif %}
+      {% if project.page %}<a href="/projects/{{ project.slug }}">read more</a>{% endif %}
+      {% if project.website %}<a href="{{ project.website }}">website</a>{% endif %}
+      {% if project.github %}<a href="{{ project.github }}">github</a>{% endif %}
     </div>
   </div>
 {% endif %}
@@ -43,8 +38,15 @@ I've completed a few projects that showcase foundational development skills, but
 {% for project in site.data.projects %}
 {% unless project.highlighted %}
   <li>
-    <a href="/projects/{{ project.slug }}">{{ project.title }}</a>
-    <span class="project-stack">{{ project.stack }}</span>
+    <div class="project-header">
+      <span class="project-name">{{ project.title }}</span>
+      <div class="project-links-inline">
+        {% if project.page %}<a href="/projects/{{ project.slug }}">more</a>{% endif %}
+        {% if project.website %}<a href="{{ project.website }}">site</a>{% endif %}
+        {% if project.github %}<a href="{{ project.github }}">github</a>{% endif %}
+      </div>
+    </div>
+    <div class="project-stack">{{ project.stack }}</div>
   </li>
 {% endunless %}
 {% endfor %}
