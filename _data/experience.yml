@@ -1,0 +1,22 @@
+# Experience Data File
+# To add a new entry: copy a block and fill in the fields
+
+- title: Incoming ML Research Intern
+  org: AgAID Institute
+  slug: agaid
+  dates: June 2025 – Aug 2025
+
+- title: ML Research Assistant
+  org: UVA Link Lab × Floodwatch
+  slug: floodwatch
+  dates: Apr 2025 – Present
+
+- title: ML Research Assistant
+  org: UVA Robot Autonomy Lab
+  slug: robot-autonomy
+  dates: Jan 2025 – May 2025
+
+- title: Executive Officer
+  org: ML@UVA
+  slug: mlatuva
+  dates: Oct 2024 – Present
