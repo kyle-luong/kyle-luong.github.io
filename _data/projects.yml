@@ -3,13 +3,21 @@
 # Set highlighted: true to show with image on main projects page
 # Set highlighted: false to show in "Other Projects" list
 
+- title: calview
+  slug: calview
+  image: calview.png
+  stack: React.js · Python · FastAPI · PostgreSQL · AWS S3 · GitHub Actions
+  description: A calendar visualizer that parses .ics files, geocodes event locations, and displays a time-aware schedule with commutes
+  github: https://github.com/kyle-luong/calview
+  highlighted: true
+
 - title: UVA x NBA Draft Analysis
   slug: nba-draft-analysis
   image: nba_draft.png
   stack: Python · scikit-learn · pandas
   description: Machine learning to predict UVA players' NBA draft potential based on college stats
   github:
-  highlighted: true
+  highlighted: false
 
 - title: WahooWheels
   slug: wahoowheels
@@ -17,7 +25,7 @@
   stack: React.js · Django · Mapbox · Bootstrap
   description: Ride-sharing platform for UVA students to offer and request rides
   github: https://github.com/PiShrestha/wahoowheels
-  highlighted: true
+  highlighted: false
 
 - title: Tech Catalog
   slug: tech-catalog
@@ -35,10 +43,10 @@
   github: https://github.com/Jonuhthan/programmable
   highlighted: false
 
-- title: CourseRate
-  slug: courserate
-  image: courserate.png
+- title: course-review-app
+  slug: course-review-app
+  image: course-review-app.png
   stack: JavaFX · JUnit · Mockito · Gradle
   description: Desktop app for reviewing and rating college courses
-  github:
+  github: https://github.com/kyle-luong/course-review-app
   highlighted: false
