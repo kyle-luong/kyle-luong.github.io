@@ -3,17 +3,17 @@
 # Optional fields: github, website, page (set to true for read more link)
 # Set highlighted: true to show with image on main projects page
 
-- title: calview
+- title: calview (wip)
   slug: calview
   image: calview.png
-  stack: React.js · Python · FastAPI · PostgreSQL · AWS · GitHub Actions
+  stack: React.js · Python · FastAPI · PostgreSQL · AWS · Docker
   description: A calendar visualizer that parses .ics files, geocodes event locations, and displays a time-aware schedule with commutes
   github: https://github.com/kyle-luong/calview
   website: https://calview.me
   page: false
   highlighted: true
 
-- title: 1v1stats
+- title: 1v1stats (wip)
   slug: 1v1stats
   image: 1v1stats.png
   stack: Next.js · TypeScript · tRPC · Prisma · Supabase (PostgreSQL) · Vercel · GitHub Actions · React · Tailwind CSS
@@ -22,6 +22,16 @@
   website: https://1v1stats.com
   page: false
   highlighted: true
+
+- title: classmate (wip)
+  slug: classmate
+  image: 
+  stack: Python· RAG · LLMs · ChromaDB · LangChain · Streamlit
+  description: An intelligent course support agent with explainable retrieval
+  github: https://github.com/kyle-luong/classmate
+  website:
+  page: false
+  highlighted: false
 
 - title: f1tenth-autonomous-racing
   slug: f1tenth-autonomous-racing
