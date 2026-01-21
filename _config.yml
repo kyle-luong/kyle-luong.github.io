@@ -1,9 +1,9 @@
 # Site settings
 title: kyle
 email: kylewfl@gmail.com
-description: kyle's portfolio
+description: Undergraduate Computer Science & Math student at UVA. Researcher & Developer.
 baseurl: ""
-url: ""
+url: "https://kyle-luong.github.io"
 
 header_pages:
   - index.md
