@@ -42,7 +42,7 @@ I've completed a few projects that showcase foundational development skills, but
       <span class="project-name">{{ project.title }}</span>
       <div class="project-links-inline">
         {% if project.page %}<a href="/projects/{{ project.slug }}">more</a>{% endif %}
-        {% if project.website %}<a href="{{ project.website }}">site</a>{% endif %}
+        {% if project.website %}<a href="{{ project.website }}">website</a>{% endif %}
         {% if project.github %}<a href="{{ project.github }}">github</a>{% endif %}
       </div>
     </div>

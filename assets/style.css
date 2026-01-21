@@ -109,7 +109,8 @@ a:hover {
 }
 
 .content {
-  padding: 6rem 0 2rem;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
   flex: 1 0 auto;
 }
 
