@@ -1,7 +1,6 @@
 :root {
   --bg: #121212;
   --text: #f1f1f1;
-  --nav-bg: #121212;
   --link: #888;
   --link-hover: #fff;
   --border: #333;
@@ -16,7 +15,6 @@
 [data-theme="light"] {
   --bg: #f5f5f5;
   --text: #111111;
-  --nav-bg: #f5f5f5;
   --link: #555;
   --link-hover: #000;
   --border: #ccc;
@@ -51,7 +49,7 @@ a:hover {
 }
 
 .navbar {
-  background: var(--nav-bg);
+  background: var(--bg);
   padding: 1rem 0;
   position: fixed;
   top: 0;
@@ -69,13 +67,36 @@ a:hover {
   font-weight: bold;
   font-size: 1.25rem;
   color: var(--text);
-  text-decoration: none;
 }
 
+.nav-right,
 .nav-links {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.hamburger-btn,
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.hamburger-btn {
+  display: none;
+  color: var(--link);
+  transition: color 0.2s;
+}
+
+.hamburger-btn svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.hamburger-btn:hover {
+  color: var(--link-hover);
 }
 
 .nav-links a {
@@ -84,15 +105,11 @@ a:hover {
   color: var(--link);
 }
 
-.nav-links a:hover {
-  color: var(--link-hover);
+.nav-links a.nav-active {
+  color: var(--text);
 }
 
 .theme-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0.25rem;
   display: flex;
   align-items: center;
 }
@@ -118,20 +135,13 @@ a:hover {
 .site-footer {
   padding: 2rem 0;
   font-size: 0.875rem;
-  text-align: left;
   color: var(--link);
-  margin-top: auto;
-}
-
-.footer-text {
-  margin: 0;
 }
 
 .footer-container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  font-size: 0.875rem;
 }
 
 .footer-left {
@@ -140,32 +150,30 @@ a:hover {
 }
 
 .footer-right {
-  color: var(--link);
   font-family: monospace;
+  text-align: right;
 }
 
-/* contact */
-.contact-links {
+.footer-contact {
   display: flex;
-  gap: 1.5rem;
-  margin-top: 1rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-contact a {
+  display: flex;
   align-items: center;
 }
 
-.contact-links a {
-  color: var(--link);
-  transition: color 0.2s;
+.footer-contact svg {
+  width: 1rem;
+  height: 1rem;
 }
 
-.contact-links a:hover {
-  color: var(--link-hover);
-}
-
-.contact-links svg {
-  width: 22px;
-  height: 22px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+/* shared secondary text size */
+.project-stack, .project-award, .exp-org, .exp-dates,
+.pub-venue, .pub-authors, .pub-footnote {
+  font-size: 0.8rem;
 }
 
 /* projects */
@@ -179,7 +187,7 @@ a:hover {
 .project-card {
   border: 1px solid var(--border);
   border-radius: 8px;
-  background: var(--nav-bg);
+  background: var(--bg);
   padding: 1rem;
 }
 
@@ -194,50 +202,44 @@ a:hover {
 .project-card h3 {
   margin: 0 0 0.4rem;
   font-size: 1rem;
-  line-height: 1;
-  color: var(--text);
 }
 
 .project-stack {
-  font-size: 0.8rem;
   color: var(--link);
-  margin-bottom: 0.5rem;
+}
+
+.project-award,
+.exp-org {
+  color: var(--text);
 }
 
 .project-card p {
   font-size: 0.9rem;
   margin-bottom: 0.4rem;
-  line-height: 1;
   color: var(--text);
 }
 
-.project-links a {
+.project-links a,
+.project-links-inline a {
   font-size: 0.85rem;
-  color: var(--link);
   text-decoration: underline;
 }
 
-.project-links a:hover {
-  color: var(--link-hover);
-}
-
-/* date styling */
-.date {
-  font-family: monospace;
-  color: var(--link);
-}
-
-/* other projects list */
+/* list layout shared by projects, experience, publications */
 .other-projects {
   list-style: none;
   padding: 0;
   margin: 1rem 0;
 }
 
+.other-projects li,
+.pub-list li {
+  margin-bottom: 1.25rem;
+}
+
 .other-projects li {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1.25rem;
   line-height: 1.4;
 }
 
@@ -246,61 +248,109 @@ a:hover {
   justify-content: space-between;
   align-items: baseline;
   width: 100%;
+  gap: 1rem;
   margin-bottom: 0.1rem;
 }
 
-.other-projects .project-name {
+.project-name, .pub-title {
   color: var(--text);
   font-weight: 500;
 }
 
-.other-projects .project-stack {
-  color: var(--link);
-  font-size: 0.8rem;
-}
-
-.other-projects .project-links-inline {
+.project-links-inline {
   display: flex;
   gap: 0.75rem;
   flex-shrink: 0;
 }
 
-.other-projects .project-links-inline a {
+/* tighten h3/h4 heading + list spacing */
+h3, h4 {
+  margin-bottom: 0.25rem;
+}
+
+h3 + ul, h4 + ul {
+  margin-top: 0.25rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+}
+
+/* experience */
+.exp-dates {
+  text-align: right;
+  color: var(--text);
+  flex-shrink: 0;
+}
+
+/* publications */
+.pub-list {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.pub-list li {
+  line-height: 1.5;
+}
+
+.pub-title a {
+  color: var(--text);
+}
+
+.pub-title a:hover {
   color: var(--link);
+}
+
+.pub-self {
   text-decoration: underline;
-  font-size: 0.85rem;
 }
 
-.other-projects .project-links-inline a:hover {
-  color: var(--link-hover);
+.pub-footnote {
+  color: var(--link);
+  margin-top: 0.5rem;
 }
 
-/* Mobile Responsiveness */
-/* Mobile Responsiveness */
+.pub-venue {
+  color: var(--link);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.pub-authors {
+  color: var(--link);
+}
+
+/* Mobile */
 @media (max-width: 600px) {
 
-  /* Stack navbar items if they don't fit */
-  .nav-container {
-    flex-wrap: wrap;
-    gap: 0.75rem;
+  .hamburger-btn {
+    display: flex;
+    align-items: center;
   }
 
-  /* Consistent layout for headers: Title top, Metadata bottom */
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: 3.5rem;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 1.5rem;
+    gap: 0.85rem;
+    border-bottom: 1px solid var(--border);
+    z-index: 999;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
   .project-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.25rem;
-  }
-
-  /* Ensure the date/stack text aligns left when stacked */
-  .project-header .project-stack {
-    text-align: left !important;
-  }
-
-  /* Adjust font sizes for spacing */
-  .other-projects .project-stack,
-  .other-projects .project-links-inline a,
-  .project-stack {
-    font-size: 0.8rem;
   }
 }

@@ -6,8 +6,8 @@
 - title: calview (wip)
   slug: calview
   image: calview.png
-  stack: React.js · Python · FastAPI · PostgreSQL · AWS · Docker
-  description: A calendar visualizer that parses .ics files, geocodes event locations, and displays a time-aware schedule with commutes
+  stack: React · AWS Lambda · Step Functions · DynamoDB · AWS SAM
+  description: Scheduling platform for 500+ users with ICS import, Mapbox commute visualization, and serverless AWS infrastructure
   github: https://github.com/kyle-luong/calview
   website: https://calview.me
   page: false
@@ -23,10 +23,32 @@
   page: false
   highlighted: true
 
-- title: classmate (wip)
+- title: HeartKey
+  slug: heartkey
+  image:
+  stack: FastAPI · ChromaDB · Raspberry Pi · Auth0 · Siamese Networks
+  award: Best Hardware — HooHacks 2026
+  description: Biometric authentication middleware using ECG signals from a Raspberry Pi to verify identity
+  github: https://github.com/kyle-luong/heartkey
+  website: https://devpost.com/software/heartkey
+  page: false
+  highlighted: false
+
+- title: LyricLab
+  slug: lyriclab
+  image:
+  stack: Next.js · Supabase · Google Gemini · ElevenLabs · Spleeter
+  award: Most Innovative Hack · Best Use of ElevenLabs — Hack to the Beat 2026
+  description: AI karaoke platform for remixing song lyrics and hosting virtual party rooms
+  github: https://github.com/kyle-luong/lyriclab
+  website: https://devpost.com/software/your-kareoke
+  page: false
+  highlighted: false
+
+- title: classmate
   slug: classmate
-  image: 
-  stack: Python· RAG · LLMs · ChromaDB · LangChain · Streamlit
+  image:
+  stack: Python · RAG · LLMs · ChromaDB · LangChain · Streamlit
   description: An intelligent course support agent with explainable retrieval
   github: https://github.com/kyle-luong/classmate
   website:
@@ -35,7 +57,7 @@
 
 - title: f1tenth-autonomous-racing
   slug: f1tenth-autonomous-racing
-  image: 
+  image:
   stack: ROS · Python · SLAM · Pure Pursuit · Robotics
   description: Perception and control algorithms for F1/10 autonomous racing
   github: https://github.com/kyle-luong/f1tenth-autonomous-racing
@@ -45,7 +67,7 @@
 
 - title: UVA x NBA Draft Analysis
   slug: nba-draft-analysis
-  image: nba_draft.png
+  image:
   stack: Python · scikit-learn · pandas
   description: Machine learning to predict UVA players' NBA draft potential based on college stats
   github:
@@ -55,7 +77,7 @@
 
 - title: WahooWheels
   slug: wahoowheels
-  image: wahoowheels.png
+  image:
   stack: React.js · Django · Mapbox · Bootstrap
   description: Ride-sharing platform for UVA students to offer and request rides
   github: https://github.com/PiShrestha/wahoowheels
@@ -65,7 +87,7 @@
 
 - title: Tech Catalog
   slug: tech-catalog
-  image: techcatalog.png
+  image:
   stack: Django · Bootstrap · Heroku · PostgreSQL · AWS S3 · GitHub Actions
   description: Amazon-style catalog and marketplace clone for electronics and appliances
   github: https://github.com/kyle-luong/techCLA
@@ -75,7 +97,7 @@
 
 - title: Programmable
   slug: programmable
-  image: programmable.png
+  image:
   stack: Flask · React.js · Firestore · Firebase
   description: Spaced-repetition flashcard tool for reinforcing programming concepts
   github: https://github.com/Jonuhthan/programmable
@@ -85,7 +107,7 @@
 
 - title: course-review-app
   slug: course-review-app
-  image: course-review-app.png
+  image:
   stack: JavaFX · JUnit · Mockito · Gradle
   description: Desktop app for reviewing and rating college courses
   github: https://github.com/kyle-luong/course-review-app

@@ -1,0 +1,23 @@
+# Publications
+# Fields: title, venue, year, url (optional), authors
+# Use * for equal contribution
+# Kyle Luong is underlined automatically in the template
+
+- title: "Knowledge-Guided Spatio-Temporal Model for Agricultural Land Use Activity Mapping"
+  venue: IJCAI-ECAI
+  year: 2026
+  url:
+  authors: "Nibir Chandra Mandal, Oishee Bintey Hoque, Kyle Luong, Samarth Swarup, Kirti Rajagopalan, Mandy L Wilson, Abhijin Adiga, Madhav Marathe"
+
+- title: "PRISM-CAFO: Prior-conditioned Remote-sensing Infrastructure Segmentation and Mapping for CAFOs"
+  venue: IEEE/CVF WACV
+  year: 2026
+  url: https://scholar.google.com/citations?user=0EMHv1kAAAAJ&hl=en
+  authors: "Oishee Bintey Hoque, Nibir Chandra Mandal, Kyle Luong, Mandy L Wilson, Samarth Swarup,  Madhav Marathe, Abhijin Adiga"
+
+- title: "Multimodal Flood Susceptibility Mapping Using Unsupervised SAR and Rainfall"
+  venue: IEEE CAMA
+  year: 2025
+  url: https://scholar.google.com/citations?user=0EMHv1kAAAAJ&hl=en
+  authors: "Bao Duong*, Kyle Luong*, Jeremy Ky*, Fabien Ferrero, N Rich Nguyen"
+  equal_contribution: true

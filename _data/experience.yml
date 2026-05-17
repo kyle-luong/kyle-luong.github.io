@@ -2,11 +2,27 @@
 # To add a new entry: copy a block and fill in the fields
 # Optional fields: stack, org_url, page (set to true for read more link)
 
+- title: Software Engineering Intern
+  org: Freddie Mac
+  slug: freddiemac
+  dates: Aug 2025 – Present
+  stack: Spring Boot · Angular · Java
+  org_url: https://www.freddiemac.com
+  page: false
+
+- title: Software Engineering Intern
+  org: SurgeStreams
+  slug: surgestreams
+  dates: Feb 2025 – May 2026
+  stack: AWS · Terraform · Docker
+  org_url:
+  page: false
+
 - title: Research Assistant
   org: UVA Biocomplexity Institute
   slug: biocomplexity
   dates: Aug 2025 – Present
-  stack: Graphical Dynamical Systems · Multi-Agent Simulation
+  stack: Network Science · Multi-Agent Simulation
   org_url: https://biocomplexity.virginia.edu
   page: false
 
@@ -14,14 +30,14 @@
   org: UVA Link Lab × Floodwatch
   slug: floodwatch
   dates: Apr 2025 – Present
-  stack: Full-Stack Systems · TypeScript, Next.js, tRPC · ML Research (IEEE)
-  org_url: https://engineering.virginia.edu/labs-groups/link-lab
+  stack: TypeScript · Next.js · tRPC · AWS · Flood Forecasting
+  org_url: https://www.floodwatch.io
   page: false
 
 - title: Teaching Assistant
   org: UVA School of Engineering
   slug: uva-engineering
-  dates: Aug 2025 – Present
+  dates: Aug 2025 – May 2026
   stack: Computer Systems and Organization
   org_url: https://engineering.virginia.edu
   page: false
@@ -30,8 +46,16 @@
   org: ML@UVA
   slug: mlatuva
   dates: Oct 2024 – Present
-  stack: Technical Leadership · Operations, Partnerships, Education
+  stack: Technical Leadership · Operations · Partnerships · Education
   org_url: https://mlatuva.org
+  page: false
+
+- title: Research Intern
+  org: AgAID Institute
+  slug: agaid
+  dates: Jun 2025 – Aug 2025
+  stack: Geospatial Multimodal ML · Remote Sensing Segmentation
+  org_url: https://agaid.org
   page: false
 
 - title: Research Assistant
@@ -39,13 +63,5 @@
   slug: robot-autonomy
   dates: Jan 2025 – May 2025
   stack: Robot Safety & Control · Neural CBFs · 3D Scene Representations
-  org_url: 
-  page: false
-
-- title: Research Intern
-  org: AgAID Institute
-  slug: agaid
-  dates: June 2025 – Aug 2025
-  stack: Geospatial Multimodal ML · Remote Sensing Segmentation · WACV, IJCAI
-  org_url: https://agaid.org
+  org_url:
   page: false

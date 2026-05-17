@@ -18,12 +18,12 @@ I've completed a few projects that showcase foundational development skills, but
   <div class="project-card">
     <img src="/assets/images/{{ project.image }}" alt="{{ project.title }}">
     <h3>{{ project.title }}</h3>
-    <p class="project-stack">{{ project.stack }}</p>
+    <div class="project-stack">{{ project.stack }}</div>
     <p>{{ project.description }}</p>
     <div class="project-links">
       {% if project.page %}<a href="/projects/{{ project.slug }}">read more</a>{% endif %}
-      {% if project.website %}<a href="{{ project.website }}">website</a>{% endif %}
-      {% if project.github %}<a href="{{ project.github }}">github</a>{% endif %}
+      {% if project.website %}<a href="{{ project.website }}" target="_blank" rel="noopener">website</a>{% endif %}
+      {% if project.github %}<a href="{{ project.github }}" target="_blank" rel="noopener">github</a>{% endif %}
     </div>
   </div>
 {% endif %}
@@ -42,10 +42,11 @@ I've completed a few projects that showcase foundational development skills, but
       <span class="project-name">{{ project.title }}</span>
       <div class="project-links-inline">
         {% if project.page %}<a href="/projects/{{ project.slug }}">more</a>{% endif %}
-        {% if project.website %}<a href="{{ project.website }}">website</a>{% endif %}
-        {% if project.github %}<a href="{{ project.github }}">github</a>{% endif %}
+        {% if project.website %}<a href="{{ project.website }}" target="_blank" rel="noopener">website</a>{% endif %}
+        {% if project.github %}<a href="{{ project.github }}" target="_blank" rel="noopener">github</a>{% endif %}
       </div>
     </div>
+    {% if project.award %}<div class="project-award">{{ project.award }}</div>{% endif %}
     <div class="project-stack">{{ project.stack }}</div>
   </li>
 {% endunless %}
