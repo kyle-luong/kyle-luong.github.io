@@ -15,6 +15,6 @@ I'm an undergraduate student at the University of Virginia studying Computer Sci
 
 ### also:
 
-- Researching & engineering for <a href="https://www.floodwatch.io" target="_blank" rel="noopener">floodwatch.io</a> (w/ Prof. Rich Nguyen)
-- Researching preference optimization for VLMs (w/ Prof. Yu Meng and Zhepei Wei)
+- Researching & engineering for <a href="https://www.floodwatch.io" target="_blank" rel="noopener">floodwatch.io</a>
+- Researching preference optimization for VLMs
 - Co-President of <a href="https://www.mlatuva.org" target="_blank" rel="noopener">Machine Learning at UVA</a>
